@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-SHOP</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/product-detail.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <nav class="navbar navbar-expand-md bg-white navbar-light shadow">
+      <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center order-lg-0" href="#">
+          <img src="images/shopping-bag-icon.png" alt="" width="45">
+          <span class="text-uppercase ms-2">E-shop</span>
+        </a>
+        <div class="order-lg-2 nav-btns">
+          <button type="button" class="btn position-relative">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">5</span>
+          </button>
+          <button type="button" class="btn position-relative">
+            <i class="fa fa-heart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">2</span>
+          </button>
+          <button type="button" class="btn position-relative">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center p-3" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">COLLECTION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SPECIAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">BLOGS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider -->
+    <!-- Carousel -->
+    <div id="demo" class="vh-100 carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="text-center slide-title text-light">
+            <h4>Best Price & Offer</h4>
+            <h1>NOW SEASON</h1>
+            <a href="" class="btn btn-light mt-3 ps-4 pe-4 rounded-5">BUY NOW</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center slide-title text-light">
+            <h4>Best Price & Offer</h4>
+            <h1>NOW SEASON</h1>
+            <a href="" class="btn btn-light mt-3 ps-4 pe-4 rounded-5">BUY NOW</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center slide-title text-light">
+            <h4>Best Price & Offer</h4>
+            <h1>NOW SEASON</h1>
+            <a href="" class="btn btn-light mt-3 ps-4 pe-4 rounded-5">BUY NOW</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center slide-title text-light">
+            <h4>Best Price & Offer</h4>
+            <h1>NOW SEASON</h1>
+            <a href="" class="btn btn-light mt-3 ps-4 pe-4 rounded-5">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <!-- ./slider -->
+  </header>
+
+  <div class="container">
+    <h2 class="text-center mt-5 mb-5">
+      <span class="border-start border-danger border-4 ps-3">New Collection</span>
+    </h2>
+
+    <!-- Nav tabs -->
+    <div class="justify-content-center d-flex">
+      <ul class="nav nav-tabs border-0">
+        <li class="nav-item">
+          <a class="nav-link active rounded-5" data-bs-toggle="tab" href="#All">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link rounded-5 pe-4 ps-4" data-bs-toggle="tab" href="#BestSellers">Best Sellers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link rounded-5 pe-4 ps-4" data-bs-toggle="tab" href="#Fealtured">Fealtured</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link rounded-5 pe-4 ps-4" data-bs-toggle="tab" href="#NewArrival">New Arrival</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Tab panes -->
+    <div class="tab-content mt-5">
+      <div class="tab-pane container active" id="All">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="" class="img-wrapper" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img src="images/c_formal_gray_shirt.png" alt="" class="img-fluid inner-img">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_pant_girl.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_polo-shirt.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_shirt-girl.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_t-shirt_men.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_tunic-shirt_girl.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_undershirt.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_western-shirt.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane container fade" id="BestSellers">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_formal_gray_shirt.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_formal_gray_shirt.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_formal_gray_shirt.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane container fade" id="Fealtured">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_formal_gray_shirt.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_formal_gray_shirt.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_formal_gray_shirt.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_formal_gray_shirt.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane container fade" id="NewArrival">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_formal_gray_shirt.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="mb-4 position-relative">
+              <a href="">
+                <img src="images/c_formal_gray_shirt.png" alt="" class="img-fluid">
+              </a>
+              <div class="d-flex justify-content-center mt-4">
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star pe-2 text-danger fs-4"></i>
+                <i class="fa fa-star-o text-danger fs-4"></i>
+              </div>
+              <div class="position-absolute top-0 end-0 translate-middle rounded-circle salebox text-light p-2">
+                Sale
+              </div>
+              <div class="text-center mt-3 pb-3">
+                <h5>Grey Shirt</h5>
+                <h5>$22.00</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <h2 class="text-center mt-5 mb-5">
+      <span class="border-start border-danger border-4 ps-3">Special Selection</span>
+    </h2>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="mb-4 position-relative">
+          <a href="" class="img-wrapper">
+            <img src="images/special_product_1.jpg" alt="" class="img-fluid w-100 inner-img">
+          </a>
+          <div class="position-absolute top-0 end-0 translate-middle rounded-circle mt-4 pt-3">
+            <i class="fa fa-heart fa-2x"></i>
+          </div>
+          <div class="text-center mt-3 pb-3">
+            <h5>Grey Shirt</h5>
+            <h5 class="mb-4">$22.00</h5>
+            <a href="" class="btn btn-outline-secondary rounded-5 pe-4 ps-4">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="mb-4 position-relative">
+          <a href="" class="img-wrapper">
+            <img src="images/special_product_2.jpg" alt="" class="img-fluid w-100 inner-img">
+          </a>
+          <div class="position-absolute top-0 end-0 translate-middle rounded-circle mt-4 pt-3 text-light">
+            <i class="fa fa-heart fa-2x"></i>
+          </div>
+          <div class="text-center mt-3 pb-3">
+            <h5>Grey Shirt</h5>
+            <h5 class="mb-4">$22.00</h5>
+
+            <a href="" class="btn btn-outline-secondary rounded-5 pe-4 ps-4">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="mb-4 position-relative">
+          <a href="" class="img-wrapper">
+            <img src="images/special_product_3.jpg" alt="" class="img-fluid w-100 inner-img">
+          </a>
+          <div class="position-absolute top-0 end-0 translate-middle rounded-circle mt-4 pt-3 text-light">
+            <i class="fa fa-heart fa-2x"></i>
+          </div>
+          <div class="text-center mt-3 pb-3">
+            <h5>Grey Shirt</h5>
+            <h5 class="mb-4">$22.00</h5>
+
+            <a href="" class="btn btn-outline-secondary rounded-5 pe-4 ps-4">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="mb-4 position-relative">
+          <a href="" class="img-wrapper">
+            <img src="images/special_product_4.jpg" alt="" class="img-fluid w-100 inner-img">
+          </a>
+          <div class="position-absolute top-0 end-0 translate-middle rounded-circle mt-4 pt-3 text-light">
+            <i class="fa fa-heart fa-2x"></i>
+          </div>
+          <div class="text-center mt-3 pb-3">
+            <h5>Grey Shirt</h5>
+            <h5 class="mb-4">$22.00</h5>
+
+            <a href="" class="btn btn-outline-secondary rounded-5 pe-4 ps-4">Add to cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid box-discount position-relative">
+    <div class="position-absolute offer text-light">
+      <h4>Discount Up To 40%</h4>
+      <h1>Grand Sale Offer!</h1>
+      <a href="" class="btn btn-light rounded-5 pe-4 ps-4 mt-3">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="text-center mt-5 mb-5">
+      <span class="border-start border-danger border-4 ps-3">Our Blogs</span>
+    </h2>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="mb-4 shadow-sm">
+          <img src="images/blog_1.jpg" alt="" class="img-fluid">
+          <div class="p-3">
+            <h4>Lorem, ipsum dolor sit amet consectetur </h4>
+            <p class="text-muted">adipisicing elit. Aperiam neque voluptatem harum repellendus fugiat doloremque. Fuga
+              iusto doloribus
+              cumque molestias et, aliquam quas magni voluptatem amet accusamus modi molestiae sequi!
+            </p>
+            <p class="text-muted">
+              Author: Join Dev
+            </p>
+            <a href="" class="btn btn-secondary pe-4 ps-4 rounded-5">Read More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="mb-4 shadow-sm">
+          <img src="images/blog_2.jpg" alt="" class="img-fluid">
+          <div class="p-3">
+            <h4>Lorem, ipsum dolor sit amet consectetur </h4>
+            <p class="text-muted">adipisicing elit. Aperiam neque voluptatem harum repellendus fugiat doloremque. Fuga
+              iusto doloribus
+              cumque molestias et, aliquam quas magni voluptatem amet accusamus modi molestiae sequi!</p>
+            <p class="text-muted">
+              Author: Join Dev
+            </p>
+            <a href="" class="btn btn-secondary pe-4 ps-4 rounded-5">Read More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="mb-4 shadow-sm">
+          <img src="images/blog_3.jpg" alt="" class="img-fluid">
+          <div class="p-3">
+            <h4>Lorem, ipsum dolor sit amet consectetur </h4>
+            <p class="text-muted">adipisicing elit. Aperiam neque voluptatem harum repellendus fugiat doloremque. Fuga
+              iusto doloribus
+              cumque molestias et, aliquam quas magni voluptatem amet accusamus modi molestiae sequi!</p>
+            <p class="text-muted">
+              Author: Join Dev
+            </p>
+            <a href="" class="btn btn-secondary pe-4 ps-4 rounded-5">Read More...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Popular of this year -->
+  <div class="container">
+    <h2 class="text-center mt-5 mb-5">
+      <span class="border-start border-danger border-4 ps-3">Popular of this year</span>
+    </h2>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+        <h5>Top Rated</h5>
+        <div class="d-flex mb-3 pt-3 popular">
+          <img src="images/top_rated_1.jpg" alt="" class="img-fluid">
+          <div class="p-3 pt-1">
+            <p class="mb-0">Blue Shirt</p>
+            <p>$50.00</p>
+          </div>
+        </div>
+        <div class="d-flex mb-3 popular">
+          <img src="images/top_rated_2.jpg" alt="" class="img-fluid">
+          <div class="p-3 pt-1">
+            <p class="mb-0">Blue Shirt</p>
+            <p>$50.00</p>
+          </div>
+        </div>
+        <div class="d-flex mb-3 popular">
+          <img src="images/top_rated_3.jpg" alt="" class="img-fluid">
+          <div class="p-3 pt-1">
+            <p class="mb-0">Blue Shirt</p>
+            <p>$50.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+        <h5>Best Selling</h5>
+        <div class="d-flex mb-3 pt-3 popular">
+          <img src="images/best_selling_1.jpg" alt="" class="img-fluid">
+          <div class="p-3 pt-1">
+            <p class="mb-0">Blue Shirt</p>
+            <p>$50.00</p>
+          </div>
+        </div>
+        <div class="d-flex mb-3 popular">
+          <img src="images/best_selling_2.jpg" alt="" class="img-fluid">
+          <div class="p-3 pt-1">
+            <p class="mb-0">Blue Shirt</p>
+            <p>$50.00</p>
+          </div>
+        </div>
+        <div class="d-flex mb-3 popular">
+          <img src="images/best_selling_3.jpg" alt="" class="img-fluid">
+          <div class="p-3 pt-1">
+            <p class="mb-0">Blue Shirt</p>
+            <p>$50.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+        <h5>On Sale</h5>
+        <div class="d-flex mb-3 pt-3 popular">
+          <img src="images/on_sale_1.jpg" alt="" class="img-fluid">
+          <div class="p-3 pt-1">
+            <p class="mb-0">Blue Shirt</p>
+            <p>$50.00</p>
+          </div>
+        </div>
+        <div class="d-flex mb-3 popular">
+          <img src="images/on_sale_2.jpg" alt="" class="img-fluid">
+          <div class="p-3 pt-1">
+            <p class="mb-0">Blue Shirt</p>
+            <p>$50.00</p>
+          </div>
+        </div>
+        <div class="d-flex mb-3 popular">
+          <img src="images/on_sale_3.jpg" alt="" class="img-fluid">
+          <div class="p-3 pt-1">
+            <p class="mb-0">Blue Shirt</p>
+            <p>$50.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Popular of this year -->
+
+  <!-- subscriber -->
+  <div class="bg-light-gray">
+    <div class="container pb-5">
+      <h2 class="text-center mt-5 mb-5 pt-5">
+        <span class="border-start border-danger border-4 ps-3">Newslatter Subscription</span>
+      </h2>
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4"></div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+          <p class="text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Repudiandae eum</p>
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control rounded-5 rounded-end-0" placeholder="Your Email">
+              <span class="input-group-text btn btn-danger rounded-5 rounded-start-0 pe-4 ps-4">Subscribe</span>
+            </div>
+          </form>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4"></div>
+      </div>
+    </div>
+  </div>
+  <!-- ./subscriber -->
+
+  <!-- footer -->
+  <footer class="bg-dark">
+    <div class="container text-color-light pt-5 pb-4">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+          <h5 class="pb-3">ATTIRE</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+          <h5 class="pb-3">Links</h5>
+          <ul class="link-list">
+            <li><a href=""><i class="fa fa-angle-right"></i> Home</a></li>
+            <li><a href=""><i class="fa fa-angle-right"></i> Collection</a></li>
+            <li><a href=""><i class="fa fa-angle-right"></i> Blogs</a></li>
+            <li><a href=""><i class="fa fa-angle-right"></i> About Us</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+          <h5 class="pb-3">Contect Us</h5>
+          <p class="d-flex mb-1"><i class="fa fa-map p-2 pt-1"></i>
+            Albert Street, New York, As 756, United State of
+            America
+          </p>
+          <p class="d-flex mb-1"><i class="fa fa-envelope p-2 pt-1"></i>
+            example@gmail.com
+          </p>
+          <p class="d-flex"><i class="fa fa-phone p-2 pt-1"></i>
+            (855) 123345567
+          </p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+          <h5 class="pb-3">Follow Us</h5>
+          <div class="d-flex icon">
+            <a href=""><i class="fa fa-facebook pe-3 text-color-light"></i></a>
+            <a href=""><i class="fa fa-twitter pe-3 text-color-light"></i></a>
+            <a href=""><i class="fa fa-instagram pe-3 text-color-light"></i></a>
+            <a href=""><i class="fa fa-pinterest text-color-light"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ./footer -->
+
+  <!-- The Modal -->
+  <div class="modal modal-xl" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Detail</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body p-4">
+
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <!-- Container for the image gallery -->
+              <div class="container-detail">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                  <img src="images/c_formal_gray_shirt.png" class="w-100">
+                </div>
+
+                <div class="mySlides">
+                  <img src="images/c_pant_girl.png" class="w-100">
+                </div>
+
+                <div class="mySlides">
+                  <img src="images/c_formal_gray_shirt.png" class="w-100">
+                </div>
+
+                <div class="mySlides">
+                  <img src="images/c_formal_gray_shirt.png" class="w-100">
+                </div>
+
+                <div class="mySlides">
+                  <img src="images/c_formal_gray_shirt.png" class="w-100">
+                </div>
+
+                <div class="mySlides">
+                  <img src="images/c_formal_gray_shirt.png" class="w-100">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Thumbnail images -->
+                <div class="row mt-2">
+                  <div class="col-4 col-md-2 p-1">
+                    <img class="demo cursor w-100" src="images/c_formal_gray_shirt.png" onclick="currentSlide(1)">
+                  </div>
+                  <div class="col-4 col-md-2 p-1">
+                    <img class="demo cursor w-100" src="images/c_pant_girl.png" onclick="currentSlide(2)">
+                  </div>
+                  <div class="col-4 col-md-2 p-1">
+                    <img class="demo cursor w-100" src="images/c_formal_gray_shirt.png" onclick="currentSlide(3)">
+                  </div>
+                  <div class="col-4 col-md-2 p-1">
+                    <img class="demo cursor w-100" src="images/c_formal_gray_shirt.png" onclick="currentSlide(4)">
+                  </div>
+                  <div class="col-4 col-md-2 p-1">
+                    <img class="demo cursor w-100" src="images/c_formal_gray_shirt.png" onclick="currentSlide(3)">
+                  </div>
+                  <div class="col-4 col-md-2 p-1">
+                    <img class="demo cursor w-100" src="images/c_formal_gray_shirt.png" onclick="currentSlide(4)">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <h4 class="fw-normal pt-2">Grey Shirt</h4>
+              <hr>
+
+              <div class="d-flex justify-content-start mt-1">
+                <i class="fa fa-star pe-2 text-danger fs-5"></i>
+                <i class="fa fa-star pe-2 text-danger fs-5"></i>
+                <i class="fa fa-star pe-2 text-danger fs-5"></i>
+                <i class="fa fa-star pe-2 text-danger fs-5"></i>
+                <i class="fa fa-star-o text-danger fs-5"></i>
+              </div>
+
+              <h5 class="mb-2 mt-4">New Price <span class="text-primary">$100.00</span></h5>
+              <h5>Old Price <span class="text-muted text-decoration-line-through">$150.00</span></h5>
+
+              <p class="mt-4">Status: <span class="text-success fw-bold">Available</span></p>
+
+              <p class="pt-2 pb-3">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim ratione velit illum cupiditate
+                necessitatibus neque, molestiae odio dolore ex, minus error eligendi aliquam exercitationem veniam
+                dolores atque possimus repellat sit.
+              </p>
+
+              <div class="d-flex">
+                SIZE: &nbsp;&nbsp;
+                <span class="pe-4 ps-4 border me-2">S</span>
+                <span class="pe-4 ps-4 border me-2">M</span>
+                <span class="pe-4 ps-4 border me-2">L</span>
+                <span class="pe-4 ps-4 border me-2">XL</span>
+                <span class="pe-4 ps-4 border me-2">XXL</span>
+                <span class="pe-4 ps-4 border me-2">2XL</span>
+              </div>
+
+              <div class="d-flex mt-3">
+                COLOR: &nbsp;&nbsp;
+                <span class="pe-4 ps-4 border me-2 mb-0 text-danger">Red</span>
+                <span class="pe-4 ps-4 border me-2 text-primary">Blue</span>
+                <span class="pe-4 ps-4 border me-2 text-success">Green</span>
+                <span class="pe-4 ps-4 border me-2 text-dark">Black</span>
+              </div>
+
+              <div class="row mt-5">
+                <div class="col-3">
+                  <input type="number" class="form-control rounded-5" value="1">
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-secondary rounded-5 pe-4 ps-4">Add to Card</button>
+                </div>
+              </div>
+
+              <div class="d-flex icon mt-5">
+                <a href=""><i class="fa fa-facebook pe-4 text-primary"></i></a>
+                <a href=""><i class="fa fa-twitter pe-4 text-primary"></i></a>
+                <a href=""><i class="fa fa-instagram pe-4 text-primary"></i></a>
+                <a href=""><i class="fa fa-pinterest text-primary"></i></a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/product-detail.js"></script>
+</body>
+
+</html>
